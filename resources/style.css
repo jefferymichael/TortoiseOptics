@@ -1,16 +1,21 @@
+/***** HTML *****/
+
 html {
     font-family: helvetica;
 }
 
 body {
     margin: auto;
+    line-height: 1.4rem;
 }
 
+/***** Header *****/
 header {
     font-size: 1rem;
     height: 30rem;  
     padding-top: 1rem;
     background-image: url(/Users/jeffborota/Documents/DevProjects/Tortoiseoptics/resources/photos/glasses-bg.png);
+    background-size: cover;
 }
 
 .container {
@@ -23,8 +28,14 @@ header {
     padding: 0 1rem;
 }
 
-nav .menu {
-    text-align: right;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: cadetblue;
+    color: white;
+    padding: 1rem 0;
+    justify-content: flex-end;
 }
 
 nav img {
@@ -32,30 +43,87 @@ nav img {
     margin: 0 1rem 0 2rem;  
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    background-color: cadetblue;
-    color: white;
-    padding: 1rem 0;
+
+nav span {
+    flex-grow: 1;
 }
 
 .truncated-menu {
     display: none;
 }
 
-.flex-container {
-    display: flex;
-}
-
+/***** Banner *****/
 .flex-container .main-banner {
+    background-color: white;
+    padding: 0.75rem 5rem;
     display: inline-block;
     margin-top: 10rem;
-    background-color: white;
-    padding: 1.5rem 5rem;
-    font-family: helvetica;
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 1.2px;
-    margin-right: -2em;
+    margin-right: -2rem;
+    line-height: 2.4rem;
+    float: right;
 }
+
+/***** Supporting Container *****/
+
+.container-top {
+    height: 10rem;
+}
+
+
+.supporting {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 5rem;
+    height: 8rem;
+    margin: 3rem;
+}
+
+.service img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.service div {
+    text-align: center;
+    
+}
+
+.service img.paper-icon {
+    width: 3.5rem;
+}
+
+/***** Section-Container *****/
+
+.supporting-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    background-color: cadetblue;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+    color: white;
+    max-width: 10rem;
+}
+
+.info {
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 4rem;
+}
+
+.info p {
+    display: block;
+    padding: 1rem 0;
+}
+
+/***** Footer *****/
+
