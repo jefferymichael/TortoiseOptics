@@ -240,12 +240,14 @@ nav span {
     }
 
     .menu .truncated-menu {
-        display: l;
+        display: list-item;
+        margin: 0;
+        list-style-type: none;
     }
 
     nav {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
             /** Main Contianer **/
@@ -273,6 +275,7 @@ nav span {
     }
 
     .supporting-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -283,8 +286,7 @@ nav span {
     }
 
     .info p {
-        padding: 1rem 0;
-        
+        padding: 1rem 0.77rem;;
         margin: 0;
         font-size: 1rem;
         width: 100%;
@@ -299,8 +301,12 @@ nav span {
         margin-top: 45rem;
     }
 
-    .footer-container .copy {
+    .footer-container .footer-img .copy {
         display: none;
+    }
+
+    .footer-img {
+       padding-left: 17.7rem;
     }
 
 
